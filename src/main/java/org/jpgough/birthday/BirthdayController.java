@@ -8,11 +8,11 @@ import java.time.LocalDate;
 @RestController
 public class BirthdayController {
 
-    @RequestMapping(value = "/", method= RequestMethod.GET)
+    @RequestMapping(value = "/today", method= RequestMethod.GET)
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
-    public String today() {
-        return LocalDate.now().toString();
+    public DateResponse today() {
+        return new DateResponse(LocalDate.now().toString());
     }
 
 }
