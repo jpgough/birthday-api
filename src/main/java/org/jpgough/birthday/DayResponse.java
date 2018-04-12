@@ -6,6 +6,8 @@ public class DayResponse {
 
     private DayOfWeek dayOfWeek;
 
+    private String nameOfMonth;
+
     public DayResponse() {}
 
     public DayResponse(DayOfWeek dayOfWeek) {
@@ -18,5 +20,13 @@ public class DayResponse {
 
     public void setDayOfWeek(DayOfWeek dayOfWeek) {
         this.dayOfWeek = dayOfWeek;
+    }
+
+    public String getNameOfMonth() {
+        return nameOfMonth;
+    }
+
+    public void setNameOfMonth(String nameOfMonth) {
+        this.nameOfMonth = nameOfMonth;
     }
 }
