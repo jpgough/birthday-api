@@ -1,10 +1,14 @@
 package org.jpgough.birthday;
 
-public class DateResponse {
+public class DateMessage {
 
     private String date;
 
-    public DateResponse(String date) {
+    public DateMessage() {
+
+    }
+
+    public DateMessage(String date) {
         this.date = date;
     }
 

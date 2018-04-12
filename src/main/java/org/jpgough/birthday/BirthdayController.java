@@ -11,8 +11,17 @@ public class BirthdayController {
     @RequestMapping(value = "/today", method= RequestMethod.GET)
     @ResponseBody
     @ResponseStatus(HttpStatus.OK)
-    public DateResponse today() {
-        return new DateResponse(LocalDate.now().toString());
+    public DateMessage today() {
+        return new DateMessage(LocalDate.now().toString());
+    }
+
+    @RequestMapping(value="/day", method=RequestMethod.POST)
+    @ResponseBody
+    @ResponseStatus(HttpStatus.OK)
+    public DayResponse getDayOfBirthday(@RequestBody DateMessage dateMessage) {
+        LocalDate localDate = LocalDate.parse(dateMessage.getDate());
+        return new DayResponse(localDate.getDayOfWeek());
+
     }
 
 }
