@@ -1,7 +1,10 @@
 package org.jpgough.birthday;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class DateMessage {
 
+    @JsonProperty(required = true)
     private String date;
 
     public DateMessage() {
