@@ -1,173 +1,983 @@
-Starting a Gradle Daemon, 1 incompatible Daemon could not be reused, use --status for details
-:buildEnvironment
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
 
-------------------------------------------------------------
-Root project
-------------------------------------------------------------
+apiElements - API elements for main. (n)
+No dependencies
 
-classpath
-+--- io.spring.gradle:dependency-management-plugin:0.6.0.RELEASE -> 1.0.3.RELEASE
-+--- org.springframework.cloud:spring-cloud-contract-gradle-plugin:2.0.0.M8
-|    +--- org.springframework.cloud:spring-cloud-contract-verifier:2.0.0.M8
-|    |    +--- org.springframework.cloud:spring-cloud-contract-spec:2.0.0.M8
-|    |    |    +--- org.codehaus.groovy:groovy:2.4.13
-|    |    |    +--- org.codehaus.groovy:groovy-nio:2.4.13
-|    |    |    |    \--- org.codehaus.groovy:groovy:2.4.13
-|    |    |    +--- org.codehaus.groovy:groovy-json:2.4.13
-|    |    |    |    \--- org.codehaus.groovy:groovy:2.4.13
-|    |    |    +--- org.codehaus.groovy:groovy-xml:2.4.13
-|    |    |    |    \--- org.codehaus.groovy:groovy:2.4.13
-|    |    |    +--- dk.brics.automaton:automaton:1.11-8
-|    |    |    +--- org.apache.commons:commons-text:1.1
-|    |    |    |    \--- org.apache.commons:commons-lang3:3.5
-|    |    |    \--- org.slf4j:slf4j-api:1.7.25
-|    |    +--- org.springframework.boot:spring-boot-test-autoconfigure:2.0.0.RELEASE
-|    |    |    +--- org.springframework.boot:spring-boot-test:2.0.0.RELEASE
-|    |    |    |    \--- org.springframework.boot:spring-boot:2.0.0.RELEASE
-|    |    |    |         +--- org.springframework:spring-core:5.0.4.RELEASE
-|    |    |    |         |    \--- org.springframework:spring-jcl:5.0.4.RELEASE
-|    |    |    |         \--- org.springframework:spring-context:5.0.4.RELEASE
-|    |    |    |              +--- org.springframework:spring-aop:5.0.4.RELEASE
-|    |    |    |              |    +--- org.springframework:spring-beans:5.0.4.RELEASE
-|    |    |    |              |    |    \--- org.springframework:spring-core:5.0.4.RELEASE (*)
-|    |    |    |              |    \--- org.springframework:spring-core:5.0.4.RELEASE (*)
-|    |    |    |              +--- org.springframework:spring-beans:5.0.4.RELEASE (*)
-|    |    |    |              +--- org.springframework:spring-core:5.0.4.RELEASE (*)
-|    |    |    |              \--- org.springframework:spring-expression:5.0.4.RELEASE
-|    |    |    |                   \--- org.springframework:spring-core:5.0.4.RELEASE (*)
-|    |    |    \--- org.springframework.boot:spring-boot-autoconfigure:2.0.0.RELEASE
-|    |    |         \--- org.springframework.boot:spring-boot:2.0.0.RELEASE (*)
-|    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.4
-|    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.0
-|    |    |    \--- com.fasterxml.jackson.core:jackson-core:2.9.4
-|    |    +--- javax.inject:javax.inject:1
-|    |    +--- org.slf4j:slf4j-api:1.7.25
-|    |    +--- com.github.tomakehurst:wiremock-standalone:2.15.0
-|    |    +--- com.toomuchcoding.jsonassert:jsonassert:0.4.11
-|    |    |    \--- com.jayway.jsonpath:json-path:2.2.0 -> 2.4.0
-|    |    |         +--- net.minidev:json-smart:2.3
-|    |    |         |    \--- net.minidev:accessors-smart:1.2
-|    |    |         |         \--- org.ow2.asm:asm:5.0.4
+archives - Configuration for archive artifacts.
+No dependencies
+
+compile - Dependencies for source set 'main' (deprecated, use 'implementation' instead).
++--- org.springframework.boot:spring-boot-starter-web -> 1.5.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.5.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:1.5.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |    \--- org.springframework:spring-context:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-aop:4.3.9.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:4.3.9.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         \--- org.springframework:spring-expression:4.3.9.RELEASE
+|    |    |              \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:1.5.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:1.5.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:1.5.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.1.11
+|    |    |    |    +--- ch.qos.logback:logback-core:1.1.11
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    |    +--- org.slf4j:jcl-over-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    +--- org.slf4j:jul-to-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    \--- org.slf4j:log4j-over-slf4j:1.7.25
 |    |    |         \--- org.slf4j:slf4j-api:1.7.25
-|    |    +--- org.codehaus.groovy:groovy:2.4.13
-|    |    +--- org.codehaus.groovy:groovy-nio:2.4.13 (*)
-|    |    +--- org.codehaus.groovy:groovy-json:2.4.13 (*)
-|    |    +--- org.codehaus.groovy:groovy-xml:2.4.13 (*)
-|    |    +--- org.skyscreamer:jsonassert:1.5.0
-|    |    |    \--- com.vaadin.external.google:android-json:0.0.20131108.vaadin1
-|    |    +--- com.github.jknack:handlebars:4.0.6
-|    |    |    +--- org.apache.commons:commons-lang3:3.1 -> 3.5
-|    |    |    +--- org.antlr:antlr4-runtime:4.5.1-1
-|    |    |    +--- org.mozilla:rhino:1.7R4
-|    |    |    \--- org.slf4j:slf4j-api:1.6.4 -> 1.7.25
-|    |    +--- commons-beanutils:commons-beanutils:1.9.3
-|    |    |    +--- commons-logging:commons-logging:1.2
-|    |    |    \--- commons-collections:commons-collections:3.2.2
-|    |    +--- org.yaml:snakeyaml:1.19
-|    |    \--- org.springframework.boot:spring-boot-starter-test:2.0.0.RELEASE
-|    |         +--- org.springframework.boot:spring-boot-starter:2.0.0.RELEASE
-|    |         |    +--- org.springframework.boot:spring-boot:2.0.0.RELEASE (*)
-|    |         |    +--- org.springframework.boot:spring-boot-autoconfigure:2.0.0.RELEASE (*)
-|    |         |    +--- org.springframework.boot:spring-boot-starter-logging:2.0.0.RELEASE
-|    |         |    |    +--- ch.qos.logback:logback-classic:1.2.3
-|    |         |    |    |    +--- ch.qos.logback:logback-core:1.2.3
-|    |         |    |    |    \--- org.slf4j:slf4j-api:1.7.25
-|    |         |    |    +--- org.apache.logging.log4j:log4j-to-slf4j:2.10.0
-|    |         |    |    |    +--- org.slf4j:slf4j-api:1.7.25
-|    |         |    |    |    \--- org.apache.logging.log4j:log4j-api:2.10.0
-|    |         |    |    \--- org.slf4j:jul-to-slf4j:1.7.25
-|    |         |    |         \--- org.slf4j:slf4j-api:1.7.25
-|    |         |    +--- javax.annotation:javax.annotation-api:1.3.2
-|    |         |    +--- org.springframework:spring-core:5.0.4.RELEASE (*)
-|    |         |    \--- org.yaml:snakeyaml:1.19
-|    |         +--- org.springframework.boot:spring-boot-test:2.0.0.RELEASE (*)
-|    |         +--- org.springframework.boot:spring-boot-test-autoconfigure:2.0.0.RELEASE (*)
-|    |         +--- com.jayway.jsonpath:json-path:2.4.0 (*)
-|    |         +--- junit:junit:4.12
-|    |         |    \--- org.hamcrest:hamcrest-core:1.3
-|    |         +--- org.assertj:assertj-core:3.9.1
-|    |         +--- org.mockito:mockito-core:2.15.0
-|    |         |    +--- net.bytebuddy:byte-buddy:1.7.9
-|    |         |    +--- net.bytebuddy:byte-buddy-agent:1.7.9
-|    |         |    \--- org.objenesis:objenesis:2.6
-|    |         +--- org.hamcrest:hamcrest-core:1.3
-|    |         +--- org.hamcrest:hamcrest-library:1.3
-|    |         |    \--- org.hamcrest:hamcrest-core:1.3
-|    |         +--- org.skyscreamer:jsonassert:1.5.0 (*)
-|    |         +--- org.springframework:spring-core:5.0.4.RELEASE (*)
-|    |         +--- org.springframework:spring-test:5.0.4.RELEASE
-|    |         |    \--- org.springframework:spring-core:5.0.4.RELEASE (*)
-|    |         \--- org.xmlunit:xmlunit-core:2.5.1
-|    +--- org.springframework.cloud:spring-cloud-contract-converters:2.0.0.M8
-|    |    +--- org.springframework:spring-context:5.0.4.RELEASE (*)
-|    |    +--- org.springframework.cloud:spring-cloud-contract-spec:2.0.0.M8 (*)
-|    |    +--- org.springframework.cloud:spring-cloud-contract-verifier:2.0.0.M8 (*)
-|    |    +--- org.springframework.boot:spring-boot-starter-logging:2.0.0.RELEASE (*)
-|    |    +--- org.codehaus.groovy:groovy:2.4.13
-|    |    +--- org.codehaus.groovy:groovy-nio:2.4.13 (*)
-|    |    \--- com.github.tomakehurst:wiremock-standalone:2.15.0
-|    \--- org.springframework.cloud:spring-cloud-contract-stub-runner:2.0.0.M8
-|         +--- org.springframework.cloud:spring-cloud-contract-verifier:2.0.0.M8 (*)
-|         +--- org.springframework.cloud:spring-cloud-contract-shade:2.0.0.M8
-|         +--- org.springframework.cloud:spring-cloud-contract-spec:2.0.0.M8 (*)
-|         \--- junit:junit:4.12 (*)
-+--- org.springframework.boot:spring-boot-gradle-plugin:1.5.4.RELEASE
-|    +--- org.springframework.boot:spring-boot-loader-tools:1.5.4.RELEASE
-|    |    \--- org.springframework:spring-core:4.3.9.RELEASE -> 5.0.4.RELEASE (*)
-|    \--- io.spring.gradle:dependency-management-plugin:1.0.3.RELEASE
-\--- se.transmode.gradle:gradle-docker:1.2
-     +--- com.google.guava:guava:17.0
-     \--- com.github.docker-java:docker-java:0.9.0
-          +--- com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.3.3
-          |    +--- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.3.3
-          |    |    +--- com.fasterxml.jackson.core:jackson-core:2.3.3 -> 2.9.4
-          |    |    \--- com.fasterxml.jackson.core:jackson-databind:2.3.3 -> 2.9.4 (*)
-          |    +--- com.fasterxml.jackson.core:jackson-core:2.3.3 -> 2.9.4
-          |    +--- com.fasterxml.jackson.core:jackson-databind:2.3.3 -> 2.9.4 (*)
-          |    \--- com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.3.3
-          |         +--- com.fasterxml.jackson.core:jackson-core:2.3.3 -> 2.9.4
-          |         \--- com.fasterxml.jackson.core:jackson-databind:2.3.3 -> 2.9.4 (*)
-          +--- com.sun.jersey:jersey-core:1.18
-          +--- com.sun.jersey:jersey-client:1.18
-          |    \--- com.sun.jersey:jersey-core:1.18
-          +--- com.sun.jersey.contribs:jersey-multipart:1.18
-          |    +--- org.jvnet.mimepull:mimepull:1.9.3
-          |    \--- com.sun.jersey:jersey-core:1.18
-          +--- com.sun.jersey.contribs:jersey-apache-client4:1.9
-          |    +--- org.apache.httpcomponents:httpclient:4.1.1 -> 4.2.5
-          |    |    +--- org.apache.httpcomponents:httpcore:4.2.4
-          |    |    +--- commons-logging:commons-logging:1.1.1 -> 1.2
-          |    |    \--- commons-codec:commons-codec:1.6
-          |    \--- com.sun.jersey:jersey-client:1.9 -> 1.18 (*)
-          +--- org.apache.httpcomponents:httpclient:4.2.5 (*)
-          +--- org.apache.commons:commons-compress:1.5
-          |    \--- org.tukaani:xz:1.2
-          +--- commons-lang:commons-lang:2.6
-          +--- commons-io:commons-io:2.3
-          +--- com.github.jnr:jnr-unixsocket:0.3
-          |    +--- com.github.jnr:jnr-ffi:1.0.3
-          |    |    +--- com.github.jnr:jffi:[1.2.1, 1.3.0) -> 1.2.16
-          |    |    +--- org.ow2.asm:asm:4.0 -> 5.0.4
-          |    |    +--- org.ow2.asm:asm-commons:4.0
-          |    |    |    \--- org.ow2.asm:asm-tree:4.0
-          |    |    |         \--- org.ow2.asm:asm:4.0 -> 5.0.4
-          |    |    +--- org.ow2.asm:asm-analysis:4.0
-          |    |    |    \--- org.ow2.asm:asm-tree:4.0 (*)
-          |    |    +--- org.ow2.asm:asm-tree:4.0 (*)
-          |    |    +--- org.ow2.asm:asm-util:4.0
-          |    |    |    \--- org.ow2.asm:asm-tree:4.0 (*)
-          |    |    \--- com.github.jnr:jnr-x86asm:[1.0.2,) -> 1.0.2
-          |    +--- com.github.jnr:jnr-constants:0.8.4
-          |    \--- com.github.jnr:jnr-enxio:0.4
-          |         +--- com.github.jnr:jnr-constants:0.8.4
-          |         \--- com.github.jnr:jnr-ffi:1.0.3 (*)
-          +--- org.slf4j:slf4j-api:1.7.5 -> 1.7.25
-          +--- org.slf4j:jul-to-slf4j:1.7.5 -> 1.7.25 (*)
-          \--- com.google.guava:guava:11.0.1 -> 17.0
+|    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    \--- org.yaml:snakeyaml:1.17
+|    +--- org.springframework.boot:spring-boot-starter-tomcat:1.5.4.RELEASE
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-el:8.5.15
+|    |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:8.5.15
+|    |         \--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    +--- org.hibernate:hibernate-validator:5.3.5.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final -> 3.3.1.Final
+|    |    \--- com.fasterxml:classmate:1.3.1 -> 1.3.3
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.8.8
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.8.0
+|    |    \--- com.fasterxml.jackson.core:jackson-core:2.8.8
+|    +--- org.springframework:spring-web:4.3.9.RELEASE
+|    |    +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    \--- org.springframework:spring-webmvc:4.3.9.RELEASE
+|         +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.9.RELEASE
+|         +--- org.springframework:spring-expression:4.3.9.RELEASE (*)
+|         \--- org.springframework:spring-web:4.3.9.RELEASE (*)
++--- org.springframework.boot:spring-boot-starter -> 1.5.4.RELEASE (*)
++--- org.springframework:spring-web -> 4.3.9.RELEASE (*)
++--- io.springfox:springfox-swagger2:2.7.0
+|    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    \--- io.swagger:swagger-annotations:1.5.21
+|    +--- io.springfox:springfox-spi:2.7.0
+|    |    \--- io.springfox:springfox-core:2.7.0
+|    |         +--- net.bytebuddy:byte-buddy:1.6.14
+|    |         +--- com.google.guava:guava:18.0 -> 23.0
+|    |         |    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.2
+|    |         |    +--- com.google.errorprone:error_prone_annotations:2.0.18
+|    |         |    +--- com.google.j2objc:j2objc-annotations:1.1
+|    |         |    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
+|    |         +--- com.fasterxml:classmate:1.3.3
+|    |         +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-context:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-aop:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE
+|    |              +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    +--- io.springfox:springfox-schema:2.7.0
+|    |    +--- io.springfox:springfox-core:2.7.0 (*)
+|    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    +--- io.springfox:springfox-swagger-common:2.7.0
+|    |    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    |    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21 (*)
+|    |    +--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- io.springfox:springfox-schema:2.7.0 (*)
+|    |    +--- io.springfox:springfox-spring-web:2.7.0
+|    |    |    +--- org.reflections:reflections:0.9.11
+|    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+|    |    |    |    \--- org.javassist:javassist:3.21.0-GA
+|    |    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    |    +--- com.fasterxml:classmate:1.3.3
+|    |    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    |    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    +--- com.fasterxml:classmate:1.3.3
+|    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    +--- io.springfox:springfox-spring-web:2.7.0 (*)
+|    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    +--- com.fasterxml:classmate:1.3.3
+|    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    \--- org.mapstruct:mapstruct:1.1.0.Final
++--- io.springfox:springfox-swagger-ui:2.7.0
+|    \--- io.springfox:springfox-spring-web:2.7.0 (*)
+\--- com.atlassian.oai:swagger-request-validator-core:2.2.2
+     +--- io.swagger.parser.v3:swagger-parser:2.0.5
+     |    +--- io.swagger.parser.v3:swagger-parser-v2-converter:2.0.5
+     |    |    +--- io.swagger:swagger-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21
+     |    |    |    |    +--- org.apache.commons:commons-lang3:3.2.1 -> 3.7
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |    |    |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8
+     |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+     |    |    |    |    |    \--- org.yaml:snakeyaml:1.17
+     |    |    |    |    +--- io.swagger:swagger-models:1.5.21 (*)
+     |    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+     |    |    |    |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |    |    +--- org.slf4j:slf4j-ext:1.6.3
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    |    \--- ch.qos.cal10n:cal10n-api:0.7.4
+     |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    \--- commons-io:commons-io:2.4
+     |    |    +--- io.swagger:swagger-compat-spec-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21 (*)
+     |    |    |    +--- io.swagger:swagger-parser:1.0.39 (*)
+     |    |    |    +--- com.github.java-json-tools:json-schema-validator:2.2.8
+     |    |    |    |    +--- com.github.java-json-tools:json-schema-core:1.2.8
+     |    |    |    |    |    +--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    +--- org.mozilla:rhino:1.7R4
+     |    |    |    |    |    +--- com.github.fge:jackson-coreutils:1.8
+     |    |    |    |    |    |    +--- com.github.fge:msg-simple:1.1
+     |    |    |    |    |    |    |    +--- com.github.fge:btf:1.2
+     |    |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.2.3 -> 2.8.8 (*)
+     |    |    |    |    |    |    +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    \--- com.github.fge:uri-template:0.9
+     |    |    |    |    |         +--- com.github.fge:msg-simple:1.1 (*)
+     |    |    |    |    |         +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    +--- javax.mail:mailapi:1.4.3
+     |    |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    |    +--- joda-time:joda-time:2.9.7 -> 2.9.9
+     |    |    |    |    +--- com.googlecode.libphonenumber:libphonenumber:8.0.0
+     |    |    |    |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     |    |    |    |    \--- net.sf.jopt-simple:jopt-simple:5.0.3
+     |    |    |    +--- com.github.fge:json-patch:1.6
+     |    |    |    |    +--- com.github.fge:jackson-coreutils:1.6 -> 1.8 (*)
+     |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    \--- org.apache.httpcomponents:httpclient:4.5.2 -> 4.5.3
+     |    |    |         +--- org.apache.httpcomponents:httpcore:4.4.6
+     |    |    |         \--- commons-codec:commons-codec:1.9 -> 1.10
+     |    |    +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5
+     |    |    |    \--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    +--- io.swagger.parser.v3:swagger-parser-core:2.0.5
+     |    |    |    \--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |    \--- io.swagger.parser.v3:swagger-parser-v3:2.0.5
+     |    |         +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |         +--- io.swagger.core.v3:swagger-core:2.0.5
+     |    |         |    +--- javax.xml.bind:jaxb-api:2.3.0
+     |    |         |    +--- org.apache.commons:commons-lang3:3.7
+     |    |         |    +--- org.slf4j:slf4j-api:1.7.25
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- io.swagger.core.v3:swagger-annotations:2.0.5
+     |    |         |    +--- io.swagger.core.v3:swagger-models:2.0.5 (*)
+     |    |         |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |         +--- io.swagger.parser.v3:swagger-parser-core:2.0.5 (*)
+     |    |         +--- commons-io:commons-io:2.4
+     |    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         \--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    +--- io.swagger.parser.v3:swagger-parser-v3:2.0.5 (*)
+     |    +--- org.slf4j:slf4j-ext:1.6.3 (*)
+     |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    \--- commons-io:commons-io:2.4
+     +--- com.github.java-json-tools:json-schema-validator:2.2.8 (*)
+     +--- org.slf4j:slf4j-api:1.7.25
+     +--- com.google.guava:guava:23.0 (*)
+     +--- com.google.code.findbugs:jsr305:3.0.2
+     \--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.5 -> 2.8.8
+          +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+          \--- com.fasterxml.jackson.core:jackson-databind:2.8.8 (*)
 
-(*) - dependencies omitted (listed previously)
+compileClasspath - Compile classpath for source set 'main'.
++--- org.springframework.boot:spring-boot-starter-web -> 1.5.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.5.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:1.5.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |    \--- org.springframework:spring-context:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-aop:4.3.9.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:4.3.9.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         \--- org.springframework:spring-expression:4.3.9.RELEASE
+|    |    |              \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:1.5.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:1.5.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:1.5.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.1.11
+|    |    |    |    +--- ch.qos.logback:logback-core:1.1.11
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    |    +--- org.slf4j:jcl-over-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    +--- org.slf4j:jul-to-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    \--- org.slf4j:log4j-over-slf4j:1.7.25
+|    |    |         \--- org.slf4j:slf4j-api:1.7.25
+|    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter-tomcat:1.5.4.RELEASE
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-el:8.5.15
+|    |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:8.5.15
+|    |         \--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    +--- org.hibernate:hibernate-validator:5.3.5.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final -> 3.3.1.Final
+|    |    \--- com.fasterxml:classmate:1.3.1 -> 1.3.3
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.8.8
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.8.0
+|    |    \--- com.fasterxml.jackson.core:jackson-core:2.8.8
+|    +--- org.springframework:spring-web:4.3.9.RELEASE
+|    |    +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    \--- org.springframework:spring-webmvc:4.3.9.RELEASE
+|         +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.9.RELEASE
+|         +--- org.springframework:spring-expression:4.3.9.RELEASE (*)
+|         \--- org.springframework:spring-web:4.3.9.RELEASE (*)
++--- org.springframework.boot:spring-boot-starter -> 1.5.4.RELEASE (*)
++--- org.springframework:spring-web -> 4.3.9.RELEASE (*)
++--- io.springfox:springfox-swagger2:2.7.0
+|    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    \--- io.swagger:swagger-annotations:1.5.21
+|    +--- io.springfox:springfox-spi:2.7.0
+|    |    \--- io.springfox:springfox-core:2.7.0
+|    |         +--- net.bytebuddy:byte-buddy:1.6.14
+|    |         +--- com.google.guava:guava:18.0 -> 23.0
+|    |         |    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.2
+|    |         |    +--- com.google.errorprone:error_prone_annotations:2.0.18
+|    |         |    +--- com.google.j2objc:j2objc-annotations:1.1
+|    |         |    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
+|    |         +--- com.fasterxml:classmate:1.3.3
+|    |         +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-context:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-aop:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE
+|    |              +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    +--- io.springfox:springfox-schema:2.7.0
+|    |    +--- io.springfox:springfox-core:2.7.0 (*)
+|    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    +--- io.springfox:springfox-swagger-common:2.7.0
+|    |    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    |    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21 (*)
+|    |    +--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- io.springfox:springfox-schema:2.7.0 (*)
+|    |    +--- io.springfox:springfox-spring-web:2.7.0
+|    |    |    +--- org.reflections:reflections:0.9.11
+|    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+|    |    |    |    \--- org.javassist:javassist:3.21.0-GA
+|    |    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    |    +--- com.fasterxml:classmate:1.3.3
+|    |    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    |    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    +--- com.fasterxml:classmate:1.3.3
+|    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    +--- io.springfox:springfox-spring-web:2.7.0 (*)
+|    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    +--- com.fasterxml:classmate:1.3.3
+|    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    \--- org.mapstruct:mapstruct:1.1.0.Final
++--- io.springfox:springfox-swagger-ui:2.7.0
+|    \--- io.springfox:springfox-spring-web:2.7.0 (*)
+\--- com.atlassian.oai:swagger-request-validator-core:2.2.2
+     +--- io.swagger.parser.v3:swagger-parser:2.0.5
+     |    +--- io.swagger.parser.v3:swagger-parser-v2-converter:2.0.5
+     |    |    +--- io.swagger:swagger-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21
+     |    |    |    |    +--- org.apache.commons:commons-lang3:3.2.1 -> 3.7
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |    |    |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8
+     |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+     |    |    |    |    |    \--- org.yaml:snakeyaml:1.17
+     |    |    |    |    +--- io.swagger:swagger-models:1.5.21 (*)
+     |    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+     |    |    |    |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |    |    +--- org.slf4j:slf4j-ext:1.6.3
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    |    \--- ch.qos.cal10n:cal10n-api:0.7.4
+     |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    \--- commons-io:commons-io:2.4
+     |    |    +--- io.swagger:swagger-compat-spec-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21 (*)
+     |    |    |    +--- io.swagger:swagger-parser:1.0.39 (*)
+     |    |    |    +--- com.github.java-json-tools:json-schema-validator:2.2.8
+     |    |    |    |    +--- com.github.java-json-tools:json-schema-core:1.2.8
+     |    |    |    |    |    +--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    +--- org.mozilla:rhino:1.7R4
+     |    |    |    |    |    +--- com.github.fge:jackson-coreutils:1.8
+     |    |    |    |    |    |    +--- com.github.fge:msg-simple:1.1
+     |    |    |    |    |    |    |    +--- com.github.fge:btf:1.2
+     |    |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.2.3 -> 2.8.8 (*)
+     |    |    |    |    |    |    +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    \--- com.github.fge:uri-template:0.9
+     |    |    |    |    |         +--- com.github.fge:msg-simple:1.1 (*)
+     |    |    |    |    |         +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    +--- javax.mail:mailapi:1.4.3
+     |    |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    |    +--- joda-time:joda-time:2.9.7 -> 2.9.9
+     |    |    |    |    +--- com.googlecode.libphonenumber:libphonenumber:8.0.0
+     |    |    |    |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     |    |    |    |    \--- net.sf.jopt-simple:jopt-simple:5.0.3
+     |    |    |    +--- com.github.fge:json-patch:1.6
+     |    |    |    |    +--- com.github.fge:jackson-coreutils:1.6 -> 1.8 (*)
+     |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    \--- org.apache.httpcomponents:httpclient:4.5.2 -> 4.5.3
+     |    |    |         +--- org.apache.httpcomponents:httpcore:4.4.6
+     |    |    |         \--- commons-codec:commons-codec:1.9 -> 1.10
+     |    |    +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5
+     |    |    |    \--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    +--- io.swagger.parser.v3:swagger-parser-core:2.0.5
+     |    |    |    \--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |    \--- io.swagger.parser.v3:swagger-parser-v3:2.0.5
+     |    |         +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |         +--- io.swagger.core.v3:swagger-core:2.0.5
+     |    |         |    +--- javax.xml.bind:jaxb-api:2.3.0
+     |    |         |    +--- org.apache.commons:commons-lang3:3.7
+     |    |         |    +--- org.slf4j:slf4j-api:1.7.25
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- io.swagger.core.v3:swagger-annotations:2.0.5
+     |    |         |    +--- io.swagger.core.v3:swagger-models:2.0.5 (*)
+     |    |         |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |         +--- io.swagger.parser.v3:swagger-parser-core:2.0.5 (*)
+     |    |         +--- commons-io:commons-io:2.4
+     |    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         \--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    +--- io.swagger.parser.v3:swagger-parser-v3:2.0.5 (*)
+     |    +--- org.slf4j:slf4j-ext:1.6.3 (*)
+     |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    \--- commons-io:commons-io:2.4
+     +--- com.github.java-json-tools:json-schema-validator:2.2.8 (*)
+     +--- org.slf4j:slf4j-api:1.7.25
+     +--- com.google.guava:guava:23.0 (*)
+     +--- com.google.code.findbugs:jsr305:3.0.2
+     \--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.5 -> 2.8.8
+          +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+          \--- com.fasterxml.jackson.core:jackson-databind:2.8.8 (*)
 
-A web-based, searchable dependency report is available by adding the --scan option.
+compileOnly - Compile only dependencies for source set 'main'.
+No dependencies
 
-BUILD SUCCESSFUL in 5s
-1 actionable task: 1 executed
+default - Configuration for default artifacts.
++--- org.springframework.boot:spring-boot-starter-web -> 1.5.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.5.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:1.5.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |    \--- org.springframework:spring-context:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-aop:4.3.9.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:4.3.9.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         \--- org.springframework:spring-expression:4.3.9.RELEASE
+|    |    |              \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:1.5.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:1.5.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:1.5.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.1.11
+|    |    |    |    +--- ch.qos.logback:logback-core:1.1.11
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    |    +--- org.slf4j:jcl-over-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    +--- org.slf4j:jul-to-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    \--- org.slf4j:log4j-over-slf4j:1.7.25
+|    |    |         \--- org.slf4j:slf4j-api:1.7.25
+|    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    \--- org.yaml:snakeyaml:1.17
+|    +--- org.springframework.boot:spring-boot-starter-tomcat:1.5.4.RELEASE
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-el:8.5.15
+|    |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:8.5.15
+|    |         \--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    +--- org.hibernate:hibernate-validator:5.3.5.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final -> 3.3.1.Final
+|    |    \--- com.fasterxml:classmate:1.3.1 -> 1.3.3
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.8.8
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.8.0
+|    |    \--- com.fasterxml.jackson.core:jackson-core:2.8.8
+|    +--- org.springframework:spring-web:4.3.9.RELEASE
+|    |    +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    \--- org.springframework:spring-webmvc:4.3.9.RELEASE
+|         +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.9.RELEASE
+|         +--- org.springframework:spring-expression:4.3.9.RELEASE (*)
+|         \--- org.springframework:spring-web:4.3.9.RELEASE (*)
++--- org.springframework.boot:spring-boot-starter -> 1.5.4.RELEASE (*)
++--- org.springframework:spring-web -> 4.3.9.RELEASE (*)
++--- io.springfox:springfox-swagger2:2.7.0
+|    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    \--- io.swagger:swagger-annotations:1.5.21
+|    +--- io.springfox:springfox-spi:2.7.0
+|    |    \--- io.springfox:springfox-core:2.7.0
+|    |         +--- net.bytebuddy:byte-buddy:1.6.14
+|    |         +--- com.google.guava:guava:18.0 -> 23.0
+|    |         |    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.2
+|    |         |    +--- com.google.errorprone:error_prone_annotations:2.0.18
+|    |         |    +--- com.google.j2objc:j2objc-annotations:1.1
+|    |         |    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
+|    |         +--- com.fasterxml:classmate:1.3.3
+|    |         +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-context:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-aop:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE
+|    |              +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    +--- io.springfox:springfox-schema:2.7.0
+|    |    +--- io.springfox:springfox-core:2.7.0 (*)
+|    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    +--- io.springfox:springfox-swagger-common:2.7.0
+|    |    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    |    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21 (*)
+|    |    +--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- io.springfox:springfox-schema:2.7.0 (*)
+|    |    +--- io.springfox:springfox-spring-web:2.7.0
+|    |    |    +--- org.reflections:reflections:0.9.11
+|    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+|    |    |    |    \--- org.javassist:javassist:3.21.0-GA
+|    |    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    |    +--- com.fasterxml:classmate:1.3.3
+|    |    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    |    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    +--- com.fasterxml:classmate:1.3.3
+|    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    +--- io.springfox:springfox-spring-web:2.7.0 (*)
+|    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    +--- com.fasterxml:classmate:1.3.3
+|    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    \--- org.mapstruct:mapstruct:1.1.0.Final
++--- io.springfox:springfox-swagger-ui:2.7.0
+|    \--- io.springfox:springfox-spring-web:2.7.0 (*)
+\--- com.atlassian.oai:swagger-request-validator-core:2.2.2
+     +--- io.swagger.parser.v3:swagger-parser:2.0.5
+     |    +--- io.swagger.parser.v3:swagger-parser-v2-converter:2.0.5
+     |    |    +--- io.swagger:swagger-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21
+     |    |    |    |    +--- org.apache.commons:commons-lang3:3.2.1 -> 3.7
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |    |    |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8
+     |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+     |    |    |    |    |    \--- org.yaml:snakeyaml:1.17
+     |    |    |    |    +--- io.swagger:swagger-models:1.5.21 (*)
+     |    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+     |    |    |    |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |    |    +--- org.slf4j:slf4j-ext:1.6.3
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    |    \--- ch.qos.cal10n:cal10n-api:0.7.4
+     |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    \--- commons-io:commons-io:2.4
+     |    |    +--- io.swagger:swagger-compat-spec-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21 (*)
+     |    |    |    +--- io.swagger:swagger-parser:1.0.39 (*)
+     |    |    |    +--- com.github.java-json-tools:json-schema-validator:2.2.8
+     |    |    |    |    +--- com.github.java-json-tools:json-schema-core:1.2.8
+     |    |    |    |    |    +--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    +--- org.mozilla:rhino:1.7R4
+     |    |    |    |    |    +--- com.github.fge:jackson-coreutils:1.8
+     |    |    |    |    |    |    +--- com.github.fge:msg-simple:1.1
+     |    |    |    |    |    |    |    +--- com.github.fge:btf:1.2
+     |    |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.2.3 -> 2.8.8 (*)
+     |    |    |    |    |    |    +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    \--- com.github.fge:uri-template:0.9
+     |    |    |    |    |         +--- com.github.fge:msg-simple:1.1 (*)
+     |    |    |    |    |         +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    +--- javax.mail:mailapi:1.4.3
+     |    |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    |    +--- joda-time:joda-time:2.9.7 -> 2.9.9
+     |    |    |    |    +--- com.googlecode.libphonenumber:libphonenumber:8.0.0
+     |    |    |    |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     |    |    |    |    \--- net.sf.jopt-simple:jopt-simple:5.0.3
+     |    |    |    +--- com.github.fge:json-patch:1.6
+     |    |    |    |    +--- com.github.fge:jackson-coreutils:1.6 -> 1.8 (*)
+     |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    \--- org.apache.httpcomponents:httpclient:4.5.2 -> 4.5.3
+     |    |    |         +--- org.apache.httpcomponents:httpcore:4.4.6
+     |    |    |         \--- commons-codec:commons-codec:1.9 -> 1.10
+     |    |    +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5
+     |    |    |    \--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    +--- io.swagger.parser.v3:swagger-parser-core:2.0.5
+     |    |    |    \--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |    \--- io.swagger.parser.v3:swagger-parser-v3:2.0.5
+     |    |         +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |         +--- io.swagger.core.v3:swagger-core:2.0.5
+     |    |         |    +--- javax.xml.bind:jaxb-api:2.3.0
+     |    |         |    +--- org.apache.commons:commons-lang3:3.7
+     |    |         |    +--- org.slf4j:slf4j-api:1.7.25
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- io.swagger.core.v3:swagger-annotations:2.0.5
+     |    |         |    +--- io.swagger.core.v3:swagger-models:2.0.5 (*)
+     |    |         |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |         +--- io.swagger.parser.v3:swagger-parser-core:2.0.5 (*)
+     |    |         +--- commons-io:commons-io:2.4
+     |    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         \--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    +--- io.swagger.parser.v3:swagger-parser-v3:2.0.5 (*)
+     |    +--- org.slf4j:slf4j-ext:1.6.3 (*)
+     |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    \--- commons-io:commons-io:2.4
+     +--- com.github.java-json-tools:json-schema-validator:2.2.8 (*)
+     +--- org.slf4j:slf4j-api:1.7.25
+     +--- com.google.guava:guava:23.0 (*)
+     +--- com.google.code.findbugs:jsr305:3.0.2
+     \--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.5 -> 2.8.8
+          +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+          \--- com.fasterxml.jackson.core:jackson-databind:2.8.8 (*)
+
+implementation - Implementation only dependencies for source set 'main'. (n)
+No dependencies
+
+runtime - Runtime dependencies for source set 'main' (deprecated, use 'runtimeOnly' instead).
++--- org.springframework.boot:spring-boot-starter-web -> 1.5.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.5.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:1.5.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |    \--- org.springframework:spring-context:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-aop:4.3.9.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:4.3.9.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         \--- org.springframework:spring-expression:4.3.9.RELEASE
+|    |    |              \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:1.5.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:1.5.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:1.5.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.1.11
+|    |    |    |    +--- ch.qos.logback:logback-core:1.1.11
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    |    +--- org.slf4j:jcl-over-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    +--- org.slf4j:jul-to-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    \--- org.slf4j:log4j-over-slf4j:1.7.25
+|    |    |         \--- org.slf4j:slf4j-api:1.7.25
+|    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    \--- org.yaml:snakeyaml:1.17
+|    +--- org.springframework.boot:spring-boot-starter-tomcat:1.5.4.RELEASE
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-el:8.5.15
+|    |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:8.5.15
+|    |         \--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    +--- org.hibernate:hibernate-validator:5.3.5.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final -> 3.3.1.Final
+|    |    \--- com.fasterxml:classmate:1.3.1 -> 1.3.3
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.8.8
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.8.0
+|    |    \--- com.fasterxml.jackson.core:jackson-core:2.8.8
+|    +--- org.springframework:spring-web:4.3.9.RELEASE
+|    |    +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    \--- org.springframework:spring-webmvc:4.3.9.RELEASE
+|         +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.9.RELEASE
+|         +--- org.springframework:spring-expression:4.3.9.RELEASE (*)
+|         \--- org.springframework:spring-web:4.3.9.RELEASE (*)
++--- org.springframework.boot:spring-boot-starter -> 1.5.4.RELEASE (*)
++--- org.springframework:spring-web -> 4.3.9.RELEASE (*)
++--- io.springfox:springfox-swagger2:2.7.0
+|    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    \--- io.swagger:swagger-annotations:1.5.21
+|    +--- io.springfox:springfox-spi:2.7.0
+|    |    \--- io.springfox:springfox-core:2.7.0
+|    |         +--- net.bytebuddy:byte-buddy:1.6.14
+|    |         +--- com.google.guava:guava:18.0 -> 23.0
+|    |         |    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.2
+|    |         |    +--- com.google.errorprone:error_prone_annotations:2.0.18
+|    |         |    +--- com.google.j2objc:j2objc-annotations:1.1
+|    |         |    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
+|    |         +--- com.fasterxml:classmate:1.3.3
+|    |         +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-context:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-aop:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE
+|    |              +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    +--- io.springfox:springfox-schema:2.7.0
+|    |    +--- io.springfox:springfox-core:2.7.0 (*)
+|    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    +--- io.springfox:springfox-swagger-common:2.7.0
+|    |    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    |    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21 (*)
+|    |    +--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- io.springfox:springfox-schema:2.7.0 (*)
+|    |    +--- io.springfox:springfox-spring-web:2.7.0
+|    |    |    +--- org.reflections:reflections:0.9.11
+|    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+|    |    |    |    \--- org.javassist:javassist:3.21.0-GA
+|    |    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    |    +--- com.fasterxml:classmate:1.3.3
+|    |    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    |    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    +--- com.fasterxml:classmate:1.3.3
+|    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    +--- io.springfox:springfox-spring-web:2.7.0 (*)
+|    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    +--- com.fasterxml:classmate:1.3.3
+|    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    \--- org.mapstruct:mapstruct:1.1.0.Final
++--- io.springfox:springfox-swagger-ui:2.7.0
+|    \--- io.springfox:springfox-spring-web:2.7.0 (*)
+\--- com.atlassian.oai:swagger-request-validator-core:2.2.2
+     +--- io.swagger.parser.v3:swagger-parser:2.0.5
+     |    +--- io.swagger.parser.v3:swagger-parser-v2-converter:2.0.5
+     |    |    +--- io.swagger:swagger-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21
+     |    |    |    |    +--- org.apache.commons:commons-lang3:3.2.1 -> 3.7
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |    |    |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8
+     |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+     |    |    |    |    |    \--- org.yaml:snakeyaml:1.17
+     |    |    |    |    +--- io.swagger:swagger-models:1.5.21 (*)
+     |    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+     |    |    |    |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |    |    +--- org.slf4j:slf4j-ext:1.6.3
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    |    \--- ch.qos.cal10n:cal10n-api:0.7.4
+     |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    \--- commons-io:commons-io:2.4
+     |    |    +--- io.swagger:swagger-compat-spec-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21 (*)
+     |    |    |    +--- io.swagger:swagger-parser:1.0.39 (*)
+     |    |    |    +--- com.github.java-json-tools:json-schema-validator:2.2.8
+     |    |    |    |    +--- com.github.java-json-tools:json-schema-core:1.2.8
+     |    |    |    |    |    +--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    +--- org.mozilla:rhino:1.7R4
+     |    |    |    |    |    +--- com.github.fge:jackson-coreutils:1.8
+     |    |    |    |    |    |    +--- com.github.fge:msg-simple:1.1
+     |    |    |    |    |    |    |    +--- com.github.fge:btf:1.2
+     |    |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.2.3 -> 2.8.8 (*)
+     |    |    |    |    |    |    +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    \--- com.github.fge:uri-template:0.9
+     |    |    |    |    |         +--- com.github.fge:msg-simple:1.1 (*)
+     |    |    |    |    |         +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    +--- javax.mail:mailapi:1.4.3
+     |    |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    |    +--- joda-time:joda-time:2.9.7 -> 2.9.9
+     |    |    |    |    +--- com.googlecode.libphonenumber:libphonenumber:8.0.0
+     |    |    |    |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     |    |    |    |    \--- net.sf.jopt-simple:jopt-simple:5.0.3
+     |    |    |    +--- com.github.fge:json-patch:1.6
+     |    |    |    |    +--- com.github.fge:jackson-coreutils:1.6 -> 1.8 (*)
+     |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    \--- org.apache.httpcomponents:httpclient:4.5.2 -> 4.5.3
+     |    |    |         +--- org.apache.httpcomponents:httpcore:4.4.6
+     |    |    |         \--- commons-codec:commons-codec:1.9 -> 1.10
+     |    |    +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5
+     |    |    |    \--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    +--- io.swagger.parser.v3:swagger-parser-core:2.0.5
+     |    |    |    \--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |    \--- io.swagger.parser.v3:swagger-parser-v3:2.0.5
+     |    |         +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |         +--- io.swagger.core.v3:swagger-core:2.0.5
+     |    |         |    +--- javax.xml.bind:jaxb-api:2.3.0
+     |    |         |    +--- org.apache.commons:commons-lang3:3.7
+     |    |         |    +--- org.slf4j:slf4j-api:1.7.25
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- io.swagger.core.v3:swagger-annotations:2.0.5
+     |    |         |    +--- io.swagger.core.v3:swagger-models:2.0.5 (*)
+     |    |         |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |         +--- io.swagger.parser.v3:swagger-parser-core:2.0.5 (*)
+     |    |         +--- commons-io:commons-io:2.4
+     |    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         \--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    +--- io.swagger.parser.v3:swagger-parser-v3:2.0.5 (*)
+     |    +--- org.slf4j:slf4j-ext:1.6.3 (*)
+     |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    \--- commons-io:commons-io:2.4
+     +--- com.github.java-json-tools:json-schema-validator:2.2.8 (*)
+     +--- org.slf4j:slf4j-api:1.7.25
+     +--- com.google.guava:guava:23.0 (*)
+     +--- com.google.code.findbugs:jsr305:3.0.2
+     \--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.5 -> 2.8.8
+          +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+          \--- com.fasterxml.jackson.core:jackson-databind:2.8.8 (*)
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- org.springframework.boot:spring-boot-starter-web -> 1.5.4.RELEASE
+|    +--- org.springframework.boot:spring-boot-starter:1.5.4.RELEASE
+|    |    +--- org.springframework.boot:spring-boot:1.5.4.RELEASE
+|    |    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |    \--- org.springframework:spring-context:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-aop:4.3.9.RELEASE
+|    |    |         |    +--- org.springframework:spring-beans:4.3.9.RELEASE
+|    |    |         |    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    |         +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    |         \--- org.springframework:spring-expression:4.3.9.RELEASE
+|    |    |              \--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    +--- org.springframework.boot:spring-boot-autoconfigure:1.5.4.RELEASE
+|    |    |    \--- org.springframework.boot:spring-boot:1.5.4.RELEASE (*)
+|    |    +--- org.springframework.boot:spring-boot-starter-logging:1.5.4.RELEASE
+|    |    |    +--- ch.qos.logback:logback-classic:1.1.11
+|    |    |    |    +--- ch.qos.logback:logback-core:1.1.11
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    |    +--- org.slf4j:jcl-over-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    +--- org.slf4j:jul-to-slf4j:1.7.25
+|    |    |    |    \--- org.slf4j:slf4j-api:1.7.25
+|    |    |    \--- org.slf4j:log4j-over-slf4j:1.7.25
+|    |    |         \--- org.slf4j:slf4j-api:1.7.25
+|    |    +--- org.springframework:spring-core:4.3.9.RELEASE
+|    |    \--- org.yaml:snakeyaml:1.17
+|    +--- org.springframework.boot:spring-boot-starter-tomcat:1.5.4.RELEASE
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    |    +--- org.apache.tomcat.embed:tomcat-embed-el:8.5.15
+|    |    \--- org.apache.tomcat.embed:tomcat-embed-websocket:8.5.15
+|    |         \--- org.apache.tomcat.embed:tomcat-embed-core:8.5.15
+|    +--- org.hibernate:hibernate-validator:5.3.5.Final
+|    |    +--- javax.validation:validation-api:1.1.0.Final
+|    |    +--- org.jboss.logging:jboss-logging:3.3.0.Final -> 3.3.1.Final
+|    |    \--- com.fasterxml:classmate:1.3.1 -> 1.3.3
+|    +--- com.fasterxml.jackson.core:jackson-databind:2.8.8
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.8.0
+|    |    \--- com.fasterxml.jackson.core:jackson-core:2.8.8
+|    +--- org.springframework:spring-web:4.3.9.RELEASE
+|    |    +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|    |    +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|    |    \--- org.springframework:spring-core:4.3.9.RELEASE
+|    \--- org.springframework:spring-webmvc:4.3.9.RELEASE
+|         +--- org.springframework:spring-aop:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-beans:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-context:4.3.9.RELEASE (*)
+|         +--- org.springframework:spring-core:4.3.9.RELEASE
+|         +--- org.springframework:spring-expression:4.3.9.RELEASE (*)
+|         \--- org.springframework:spring-web:4.3.9.RELEASE (*)
++--- org.springframework.boot:spring-boot-starter -> 1.5.4.RELEASE (*)
++--- org.springframework:spring-web -> 4.3.9.RELEASE (*)
++--- io.springfox:springfox-swagger2:2.7.0
+|    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21
+|    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+|    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+|    |    \--- io.swagger:swagger-annotations:1.5.21
+|    +--- io.springfox:springfox-spi:2.7.0
+|    |    \--- io.springfox:springfox-core:2.7.0
+|    |         +--- net.bytebuddy:byte-buddy:1.6.14
+|    |         +--- com.google.guava:guava:18.0 -> 23.0
+|    |         |    +--- com.google.code.findbugs:jsr305:1.3.9 -> 3.0.2
+|    |         |    +--- com.google.errorprone:error_prone_annotations:2.0.18
+|    |         |    +--- com.google.j2objc:j2objc-annotations:1.1
+|    |         |    \--- org.codehaus.mojo:animal-sniffer-annotations:1.14
+|    |         +--- com.fasterxml:classmate:1.3.3
+|    |         +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |         +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE
+|    |         |    +--- org.springframework:spring-beans:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-context:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    +--- org.springframework:spring-aop:4.0.9.RELEASE -> 4.3.9.RELEASE (*)
+|    |         |    \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    |         \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE
+|    |              +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |              \--- org.slf4j:slf4j-api:1.7.10 -> 1.7.25
+|    +--- io.springfox:springfox-schema:2.7.0
+|    |    +--- io.springfox:springfox-core:2.7.0 (*)
+|    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    +--- io.springfox:springfox-swagger-common:2.7.0
+|    |    +--- io.swagger:swagger-annotations:1.5.13 -> 1.5.21
+|    |    +--- io.swagger:swagger-models:1.5.13 -> 1.5.21 (*)
+|    |    +--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- io.springfox:springfox-schema:2.7.0 (*)
+|    |    +--- io.springfox:springfox-spring-web:2.7.0
+|    |    |    +--- org.reflections:reflections:0.9.11
+|    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+|    |    |    |    \--- org.javassist:javassist:3.21.0-GA
+|    |    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    |    +--- com.fasterxml:classmate:1.3.3
+|    |    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    |    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    |    |    \--- io.springfox:springfox-spi:2.7.0 (*)
+|    |    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    |    +--- com.fasterxml:classmate:1.3.3
+|    |    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    |    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    |    \--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    +--- io.springfox:springfox-spring-web:2.7.0 (*)
+|    +--- com.google.guava:guava:18.0 -> 23.0 (*)
+|    +--- com.fasterxml:classmate:1.3.3
+|    +--- org.slf4j:slf4j-api:1.7.24 -> 1.7.25
+|    +--- org.springframework.plugin:spring-plugin-core:1.2.0.RELEASE (*)
+|    +--- org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE (*)
+|    \--- org.mapstruct:mapstruct:1.1.0.Final
++--- io.springfox:springfox-swagger-ui:2.7.0
+|    \--- io.springfox:springfox-spring-web:2.7.0 (*)
+\--- com.atlassian.oai:swagger-request-validator-core:2.2.2
+     +--- io.swagger.parser.v3:swagger-parser:2.0.5
+     |    +--- io.swagger.parser.v3:swagger-parser-v2-converter:2.0.5
+     |    |    +--- io.swagger:swagger-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21
+     |    |    |    |    +--- org.apache.commons:commons-lang3:3.2.1 -> 3.7
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.7.22 -> 1.7.25
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |    |    |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8
+     |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+     |    |    |    |    |    \--- org.yaml:snakeyaml:1.17
+     |    |    |    |    +--- io.swagger:swagger-models:1.5.21 (*)
+     |    |    |    |    +--- com.google.guava:guava:20.0 -> 23.0 (*)
+     |    |    |    |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |    |    +--- org.slf4j:slf4j-ext:1.6.3
+     |    |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    |    \--- ch.qos.cal10n:cal10n-api:0.7.4
+     |    |    |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    |    |    \--- commons-io:commons-io:2.4
+     |    |    +--- io.swagger:swagger-compat-spec-parser:1.0.39
+     |    |    |    +--- io.swagger:swagger-core:1.5.21 (*)
+     |    |    |    +--- io.swagger:swagger-parser:1.0.39 (*)
+     |    |    |    +--- com.github.java-json-tools:json-schema-validator:2.2.8
+     |    |    |    |    +--- com.github.java-json-tools:json-schema-core:1.2.8
+     |    |    |    |    |    +--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    +--- org.mozilla:rhino:1.7R4
+     |    |    |    |    |    +--- com.github.fge:jackson-coreutils:1.8
+     |    |    |    |    |    |    +--- com.github.fge:msg-simple:1.1
+     |    |    |    |    |    |    |    +--- com.github.fge:btf:1.2
+     |    |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    |    +--- com.fasterxml.jackson.core:jackson-databind:2.2.3 -> 2.8.8 (*)
+     |    |    |    |    |    |    +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    |    \--- com.github.fge:uri-template:0.9
+     |    |    |    |    |         +--- com.github.fge:msg-simple:1.1 (*)
+     |    |    |    |    |         +--- com.google.guava:guava:16.0.1 -> 23.0 (*)
+     |    |    |    |    |         \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    |    +--- javax.mail:mailapi:1.4.3
+     |    |    |    |    |    \--- javax.activation:activation:1.1
+     |    |    |    |    +--- joda-time:joda-time:2.9.7 -> 2.9.9
+     |    |    |    |    +--- com.googlecode.libphonenumber:libphonenumber:8.0.0
+     |    |    |    |    +--- com.google.code.findbugs:jsr305:3.0.1 -> 3.0.2
+     |    |    |    |    \--- net.sf.jopt-simple:jopt-simple:5.0.3
+     |    |    |    +--- com.github.fge:json-patch:1.6
+     |    |    |    |    +--- com.github.fge:jackson-coreutils:1.6 -> 1.8 (*)
+     |    |    |    |    \--- com.google.code.findbugs:jsr305:2.0.1 -> 3.0.2
+     |    |    |    \--- org.apache.httpcomponents:httpclient:4.5.2 -> 4.5.3
+     |    |    |         +--- org.apache.httpcomponents:httpcore:4.4.6
+     |    |    |         \--- commons-codec:commons-codec:1.9 -> 1.10
+     |    |    +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5
+     |    |    |    \--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |    +--- io.swagger.parser.v3:swagger-parser-core:2.0.5
+     |    |    |    \--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |    \--- io.swagger.parser.v3:swagger-parser-v3:2.0.5
+     |    |         +--- io.swagger.core.v3:swagger-models:2.0.4 -> 2.0.5 (*)
+     |    |         +--- io.swagger.core.v3:swagger-core:2.0.5
+     |    |         |    +--- javax.xml.bind:jaxb-api:2.3.0
+     |    |         |    +--- org.apache.commons:commons-lang3:3.7
+     |    |         |    +--- org.slf4j:slf4j-api:1.7.25
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         |    +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    |         |    +--- io.swagger.core.v3:swagger-annotations:2.0.5
+     |    |         |    +--- io.swagger.core.v3:swagger-models:2.0.5 (*)
+     |    |         |    \--- javax.validation:validation-api:1.1.0.Final
+     |    |         +--- io.swagger.parser.v3:swagger-parser-core:2.0.5 (*)
+     |    |         +--- commons-io:commons-io:2.4
+     |    |         +--- com.fasterxml.jackson.core:jackson-annotations:2.9.5 -> 2.8.0
+     |    |         +--- com.fasterxml.jackson.core:jackson-databind:2.9.5 -> 2.8.8 (*)
+     |    |         \--- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.5 -> 2.8.8 (*)
+     |    +--- io.swagger.parser.v3:swagger-parser-v3:2.0.5 (*)
+     |    +--- org.slf4j:slf4j-ext:1.6.3 (*)
+     |    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.25
+     |    \--- commons-io:commons-io:2.4
+     +--- com.github.java-json-tools:json-schema-validator:2.2.8 (*)
+     +--- org.slf4j:slf4j-api:1.7.25
+     +--- com.google.guava:guava:23.0 (*)
+     +--- com.google.code.findbugs:jsr305:3.0.2
+     \--- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.9.5 -> 2.8.8
+          +--- com.fasterxml.jackson.core:jackson-core:2.8.8
+          \--- com.fasterxml.jackson.core:jackson-databind:2.8.8 (*)
